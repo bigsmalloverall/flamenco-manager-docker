@@ -1,0 +1,6 @@
+manager_url: http://localhost:12055/
+task_types: [blender, ffmpeg, file-management, misc]
+restart_exit_code: 47
+
+# Optional advanced option, available on Linux only:
+oom_score_adjust: 500

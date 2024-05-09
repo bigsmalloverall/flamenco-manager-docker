@@ -1,0 +1,6 @@
+.docker/flamenco-manager/Dockerfile old 2
+.docker/flamenco-manager/Dockerfile-old
+.env
+*.blob
+*.blend
+pack-info.txt

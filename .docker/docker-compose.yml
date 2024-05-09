@@ -1,0 +1,13 @@
+# version: '3.8'
+services:
+  flamenco-manager:
+    build:
+      context: flamenco-manager
+    ports:
+      - "12055:12055"
+    restart: always
+    working_dir: /flamenco
+    volumes:
+      - ../flamenco/file-store:/flamenco/file-store
+      - ../flamenco/jobs:/flamenco/jobs
+      - ../flamenco/render:/flamenco/render
