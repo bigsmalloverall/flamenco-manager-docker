@@ -3,11 +3,15 @@ services:
   flamenco-manager:
     build:
       context: flamenco-manager
+    hostname: ${COMPOSE_PROJECT_NAME}-flamenco-manager
+    container_name: ${COMPOSE_PROJECT_NAME}-flamenco-manager
     ports:
-      - "12055:12055"
+      - "${EXPOSED_PORT}:12055"
     restart: always
     working_dir: /flamenco
     volumes:
       - ../flamenco/file-store:/flamenco/file-store
       - ../flamenco/jobs:/flamenco/jobs
       - ../flamenco/render:/flamenco/render
+    env_file:
+      - .env
