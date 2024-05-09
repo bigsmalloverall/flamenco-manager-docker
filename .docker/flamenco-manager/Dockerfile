@@ -22,8 +22,8 @@ RUN mkdir -p /flamenco/scripts/ && \
     mv /flamenco/tmp/multi_pass_render.js /flamenco/scripts/ && \
     rm -rf /flamenco/tmp/
 
-COPY /config/flamenco-manager.yaml /flamenco/flamenco-manager.yaml
-COPY /config/flamenco-worker.yaml /flamenco/flamenco-worker.yaml
+# COPY /config/flamenco-manager.yaml /flamenco/flamenco-manager.yaml
+# COPY /config/flamenco-worker.yaml /flamenco/flamenco-worker.yaml
 
 ENV DEBIAN_FRONTEND=dialog
 

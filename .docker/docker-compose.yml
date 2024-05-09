@@ -13,5 +13,7 @@ services:
       - ../flamenco/file-store:/flamenco/file-store
       - ../flamenco/jobs:/flamenco/jobs
       - ../flamenco/render:/flamenco/render
+      - ./flamenco-manager/config/flamenco-manager.yaml:/flamenco/flamenco-manager.yaml
+      - ./flamneco-manager/config/flamenco-worker.yaml:/flamenco/flamenco-worker.yaml
     env_file:
       - .env
